@@ -18,7 +18,7 @@
         </fecha_publicacion>
     </libro>
     <libro id='2'>
-        <titulo>Platero ytituloyo</titulo>
+        <titulo>Platero y yo</titulo>
         <genero>lírico</genero>
         <autor nacionalidad="puertorriqueño">
 
@@ -38,7 +38,6 @@
         <titulo>Mujercitas</titulo>
         <genero>novgenerola</genero>
         <autor nacionalidad="estadounidense">
-            <s>femenino</s>
             <nombre>Louisa</nombre>
             <apellido1>May</apellido1>
             <apellido2>Alcott</apellido2>
@@ -63,8 +62,8 @@
         <editorial>Espasa libros</editorial>
         <ISBN>9788467055221</ISBN>
         <fecha_publicacion> 
-            <dia/>
-            <mes/>
+            <dia>14</dia>
+            <mes>Agosto</mes>
             <año>1603</año>
         </fecha_publicacion>
     </libro>
@@ -165,7 +164,7 @@
         <editorial>Anaya</editorial>
         <ISBN>9788466705707</ISBN>
         <fecha_publicacion> 
-            <dia/>
+            <dia>7</dia>
             <mes/>
             <año>1862</año>
         </fecha_publicacion>
@@ -182,10 +181,9 @@
         <editorial>Castalia</editorial>
         <ISBN>9788497402798</ISBN>
         <fecha_publicacion> 
-            <dia/>
+            <dia>12</dia>
             <mes>Julio</mes>
             <año>1919</año>
         </fecha_publicacion>
     </libro>
-</librería>
-</root>
+</libreria>

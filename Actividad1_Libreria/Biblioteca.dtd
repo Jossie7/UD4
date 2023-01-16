@@ -10,7 +10,7 @@
     <!ELEMENT apellido2 (#PCDATA)>
 <!ELEMENT editorial (#PCDATA)>
 <!ELEMENT ISBN (#PCDATA)>
-<!ELEMENT fecha_publicacion (#PCDATA)>
+<!ELEMENT fecha_publicacion (dia,mes,año)>
     <!ELEMENT dia (#PCDATA)>
     <!ELEMENT mes (#PCDATA)>
     <!ELEMENT año (#PCDATA)>
