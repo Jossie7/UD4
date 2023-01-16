@@ -1,0 +1,16 @@
+<!ELEMENT libreria (libro*)>
+<!ELEMENT libro (titulo,genero, autor,editorial,ISBN,fecha_publicacion)>
+<!ATTLIST libro id CDATA #REQUIRED>
+<!ELEMENT titulo (#PCDATA)>
+<!ELEMENT genero (#PCDATA)>
+<!ELEMENT autor (nombre,apellido1,apellido2)>
+<!ATTLIST autor nacionalidad CDATA #REQUIRED>
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT apellido1 (#PCDATA)>
+    <!ELEMENT apellido2 (#PCDATA)>
+<!ELEMENT editorial (#PCDATA)>
+<!ELEMENT ISBN (#PCDATA)>
+<!ELEMENT fecha_publicacion (#PCDATA)>
+    <!ELEMENT dia (#PCDATA)>
+    <!ELEMENT mes (#PCDATA)>
+    <!ELEMENT año (#PCDATA)>

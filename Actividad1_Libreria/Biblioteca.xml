@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE libreria SYSTEM "Biblioteca.dtd.">
+<libreria>
+    <libro id='1'>
+        <titulo>Don Quijote de la Mancha</titulo>
+        <genero>novela</genero>
+        <autor nacionalidad="española">
+            <nombre>Miguel</nombre>
+            <apellido1>De Cervantes</apellido1>
+            <apellido2>Saavedra</apellido2>
+        </autor>
+        <editorial>La casa del libro</editorial>
+        <ISBN>8526547419637</ISBN>
+        <fecha_publicacion> 
+            <dia>04</dia>
+            <mes>Febrero </mes>
+            <año>1605</año>
+        </fecha_publicacion>
+    </libro>
+    <libro id='2'>
+        <titulo>Platero ytituloyo</titulo>
+        <genero>lírico</genero>
+        <autor nacionalidad="puertorriqueño">
+
+            <nombre>Juan</nombre>
+            <apellido1>Ramón</apellido1>
+            <apellido2>Jiménez</apellido2>
+        </autor>
+        <editorial>IberLibro</editorial>
+        <ISBN>9788426146557</ISBN>
+        <fecha_publicacion> 
+            <dia>15</dia>
+            <mes>Marzo </mes>
+            <año>1914</año>
+        </fecha_publicacion>
+    </libro>
+    <libro id='3'>
+        <titulo>Mujercitas</titulo>
+        <genero>novgenerola</genero>
+        <autor nacionalidad="estadounidense">
+            <s>femenino</s>
+            <nombre>Louisa</nombre>
+            <apellido1>May</apellido1>
+            <apellido2>Alcott</apellido2>
+        </autor>
+        <editorial>Servilibro ediciones S.A.</editorial>
+        <ISBN>9788490050934</ISBN>
+        <fecha_publicacion> 
+            <dia>30</dia>
+            <mes>Septiembre </mes>
+            <año>1868</año>
+        </fecha_publicacion>
+    </libro>
+    <libro id='4'>
+        <titulo>Hamlet</titulo>
+        <genero>tragedia</genero>
+        <autor nacionalidad="inglesa">
+
+            <nombre>William</nombre>
+            <apellido1>Shakespeare</apellido1>
+            <apellido2>Arden</apellido2>
+        </autor>
+        <editorial>Espasa libros</editorial>
+        <ISBN>9788467055221</ISBN>
+        <fecha_publicacion> 
+            <dia/>
+            <mes/>
+            <año>1603</año>
+        </fecha_publicacion>
+    </libro>
+    <libro id='5'>
+        <titulo>La dia Comedia</titulo>
+        <genero>poesía</genero>
+        <autor nacionalidad="italiano">
+
+            <nombre>Dante</nombre>
+            <apellido1>Alighieri</apellido1>
+            <apellido2>degli Abati </apellido2>
+        </autor>
+        <editorial>Seix Barral</editorial>
+        <ISBN>9788432227813</ISBN>
+        <fecha_publicacion> 
+            <dia>23</dia>
+            <mes>Junio</mes>
+            <año>1321</año>
+        </fecha_publicacion>
+    </libro>
+    <libro id='6'>
+        <titulo>Ña Catita</titulo>
+        <genero>comedia</genero>
+        <autor nacionalidad="peruano">
+
+            <nombre>Manuel</nombre>
+            <apellido1>Ascencio</apellido1>
+            <apellido2>Segura</apellido2>
+        </autor>
+        <editorial>Fondo Editorial Cultura Peruana</editorial>
+        <ISBN>9358627413895</ISBN>
+        <fecha_publicacion> 
+            <dia>24</dia>
+            <mes>Enero</mes>
+            <año>1845</año>
+        </fecha_publicacion>
+    </libro>
+    <libro id='7'>
+        <titulo>Conversación en la catedral</titulo>
+        <genero>novela</genero>
+        <autor nacionalidad="peruano">
+
+            <nombre>Mario</nombre>
+            <apellido1>Vargas</apellido1>
+            <apellido2>Llosa</apellido2>
+        </autor>
+        <editorial>Alfaguara</editorial>
+        <ISBN>9788420467085</ISBN>
+        <fecha_publicacion> 
+            <dia>9</dia>
+            <mes>Septiembre</mes>
+            <año>1969</año>
+        </fecha_publicacion>
+    </libro>
+    <libro id='8'>
+        <titulo>El laberinto de la soledad</titulo>
+        <genero>ensayo</genero>
+        <autor nacionalidad="mexicano">
+
+            <nombre>Octavio</nombre>
+            <apellido1>Paz</apellido1>
+            <apellido2>Lozano</apellido2>
+        </autor>
+        <editorial>Ediciones Cátedra</editorial>
+        <ISBN>9788437633992</ISBN>
+        <fecha_publicacion> 
+            <dia>7</dia>
+            <mes>Abril</mes>
+            <año>1950</año>
+        </fecha_publicacion>
+    </libro>
+    <libro id='9'>
+        <titulo>Bodas de Sangre</titulo>
+        <genero>tragedia</genero>
+        <autor nacionalidad="español">
+
+            <nombre>Federico</nombre>
+            <apellido1>García</apellido1>
+            <apellido2>Lorca</apellido2>
+        </autor>
+        <editorial>La Fabrica</editorial>
+        <ISBN>9788492841752</ISBN>
+        <fecha_publicacion> 
+            <dia>8</dia>
+            <mes>Marzo</mes>
+            <año>1933</año>
+        </fecha_publicacion>
+    </libro>
+    <libro id='10'>
+        <titulo>Viaje al centro de la Tierra</titulo>
+        <genero>novela</genero>
+        <autor nacionalidad="francés">
+
+            <nombre>Julio</nombre>
+            <apellido1>Verne</apellido1>
+            <apellido2>Verne</apellido2>
+        </autor>
+        <editorial>Anaya</editorial>
+        <ISBN>9788466705707</ISBN>
+        <fecha_publicacion> 
+            <dia/>
+            <mes/>
+            <año>1862</año>
+        </fecha_publicacion>
+    </libro>
+    <libro id='11'>
+        <titulo>Heraldos Negros</titulo>
+        <genero>lírico</genero>
+        <autor nacionalidad="peruano">
+
+            <nombre>Julio</nombre>
+            <apellido1>César</apellido1>
+            <apellido2>Vallejo</apellido2>
+        </autor>
+        <editorial>Castalia</editorial>
+        <ISBN>9788497402798</ISBN>
+        <fecha_publicacion> 
+            <dia/>
+            <mes>Julio</mes>
+            <año>1919</año>
+        </fecha_publicacion>
+    </libro>
+</librería>
+</root>
