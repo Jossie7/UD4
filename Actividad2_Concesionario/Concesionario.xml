@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE concesionario SYSTEM "Concesionario.dtd.">
+<!DOCTYPE concesionario SYSTEM "/Concesionario.xsd">
 <concesionario>
     <coches>
         <coche id='1'>
