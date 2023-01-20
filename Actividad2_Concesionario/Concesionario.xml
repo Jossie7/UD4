@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concesionario SYSTEM "Concesionario.dtd.">
+<concesionario>
+    <coches>
+    <coche id='1'>
+        <codigo>1522 </codigo>
+        <marca>Toyota</marca>
+        <modelo> </modelo>
+        <matricula> </matricula>
+        <potencia> </potencia>
+        <plazas> </plazas>
+        <numero_puerta></numero_puerta>
+    </coche>
+    <coche id='2'>
+        <codigo>2003 </codigo>
+        <marca>Camioneta 4x4</marca>
+        <modelo>Munstang </modelo>
+        <matricula>W1T724 </matricula>
+        <potencia>10 </potencia>
+        <plazas> </plazas>
+        <numero_puerta></numero_puerta>
+    </coche>
+</coches>
+</concesionario>

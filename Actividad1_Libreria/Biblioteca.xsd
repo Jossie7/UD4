@@ -12,7 +12,7 @@
 			<xs:sequence>
 				<xs:element minOccurs="0" maxOccurs="unbounded" ref="autor" />
 				<xs:element ref="titulo" />
-        <xs:element ref="genero" />
+        		<xs:element ref="genero" />
 				<xs:element ref="editorial" />
 				<xs:element ref="ISBN" />
 				<xs:element ref="fecha_publicacion" />

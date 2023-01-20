@@ -25,11 +25,12 @@
                 <xs:element ref="plazas" />
                 <xs:element ref="numero_puertas" />
 			</xs:sequence>
+			<xs:attribute name="id" type="xs:string" use="required" />
 		</xs:complexType>
 	</xs:element>
 
-    <xs:element name="marca" type="xs:integer" />
-    <xs:element name="modelo" type="xs:integer" />
+    <xs:element name="marca" type="xs:string" />
+    <xs:element name="modelo" type="xs:string" />
     <xs:element name="matricula" type="xs:integer" />
     <xs:element name="potencia" type="xs:integer" />
     <xs:element name="plazas" type="xs:integer" />

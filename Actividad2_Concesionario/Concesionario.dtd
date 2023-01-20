@@ -1,5 +1,7 @@
 <!ELEMENT concesionario (coches*)>
+<!ELEMENT coches (coche*)>
 <!ELEMENT coche (codigo,marca, modelo,matricula,potencia,plazas,numero_puerta)>
+<!ATTLIST coche id CDATA #REQUIRED>
 <!ELEMENT codigo (#PCDATA)>
 <!ELEMENT marca (#PCDATA)>
 <!ELEMENT modelo (#PCDATA)>
