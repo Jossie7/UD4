@@ -2,23 +2,41 @@
 <!DOCTYPE concesionario SYSTEM "Concesionario.dtd.">
 <concesionario>
     <coches>
-    <coche id='1'>
-        <codigo>1522 </codigo>
-        <marca>Toyota</marca>
-        <modelo> </modelo>
-        <matricula> </matricula>
-        <potencia> </potencia>
-        <plazas> </plazas>
-        <numero_puerta></numero_puerta>
-    </coche>
-    <coche id='2'>
-        <codigo>2003 </codigo>
-        <marca>Camioneta 4x4</marca>
-        <modelo>Munstang </modelo>
-        <matricula>W1T724 </matricula>
-        <potencia>10 </potencia>
-        <plazas> </plazas>
-        <numero_puerta></numero_puerta>
-    </coche>
-</coches>
+        <coche id='1'>
+            <codigo>1998 </codigo>
+            <marca>Toyota</marca>
+            <modelo> Lamborgini </modelo>
+            <matricula> WiT506 </matricula>
+            <potencia>80 </potencia>
+            <plazas> 2</plazas>
+            <numero_puerta>2</numero_puerta>
+        </coche>
+        <coche id='2'>
+            <codigo>2003 </codigo>
+            <marca>Camioneta 4x4</marca>
+            <modelo>Munstang </modelo>
+            <matricula>W1T724 </matricula>
+            <potencia>10 </potencia>
+            <plazas> 8</plazas>
+            <numero_puerta>4</numero_puerta>
+        </coche>
+        <coche id='3'>
+            <codigo>2003 </codigo>
+            <marca>Camioneta 4x4</marca>
+            <modelo>Munstang </modelo>
+            <matricula>W1T724 </matricula>
+            <potencia>10 </potencia>
+            <plazas> </plazas>
+            <numero_puerta></numero_puerta>
+        </coche>
+        <coche id='3'>
+            <codigo>2020 </codigo>
+            <marca> Ferrari </marca>
+            <modelo>Ferrari deportivo </modelo>
+            <matricula>W7Y924 </matricula>
+            <potencia>70 </potencia>
+            <plazas>4 </plazas>
+            <numero_puerta>4</numero_puerta>
+        </coche>
+    </coches>
 </concesionario>
