@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="concesionario">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element minOccurs="0" maxOccurs="unbounded" ref="coches" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+    <xs:element name="coches">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element minOccurs="0" maxOccurs="unbounded" ref="coche" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="coche">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="marca" />
+				<xs:element ref="modelo" />
+				<xs:element ref="matricula" />
+                <xs:element ref="potencia" />
+                <xs:element ref="plazas" />
+                <xs:element ref="numero_puertas" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+    <xs:element name="marca" type="xs:integer" />
+    <xs:element name="modelo" type="xs:integer" />
+    <xs:element name="matricula" type="xs:integer" />
+    <xs:element name="potencia" type="xs:integer" />
+    <xs:element name="plazas" type="xs:integer" />
+    <xs:element name="numero_puertas" type="xs:integer" />
+</xs:schema>
