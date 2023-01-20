@@ -1,20 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE Gestoria SYSTEM "Clientes.dtd">
-<Gestoria>
-    <cliente>
-        <sede>
-            <codigo>1998 </codigo>
-            <nombre>Toyota</nombre>
-            <fecha_alta> Lamborgini </fecha_alta>
-            <descripcion_cliente> WiT506 </descripcion_cliente>
-        </sede>
-        <clienteNdatos>
-            <codigo_cliente> </codigo_cliente>
-            <numero> </numero>
-            <coste></coste>
-            <resumen></resumen>
-            <plazo></plazo>
-        </clienteNdatos>
+<!DOCTYPE Clientes SYSTEM "Clientes.dtd">
+<Clientes>
+    <sede>
+        <direccion> </direccion>
+        <codigo></codigo>
+        <empleado></empleado>
+        <fecha_alta> </fecha_alta>
+        <descripcion_cliente></descripcion_cliente>
+       
+        <cliente>
+            <numero_viv></numero_viv> 
+            <coste> </coste>
+            <resumen>            </resumen>
 
+            <plazo></plazo>
+
+            
+           
+               
         </cliente>
-</Gestoria>
+
+            
+        
+        
+        
+    </sede>
+</Clientes>
