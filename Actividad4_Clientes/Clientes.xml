@@ -12,17 +12,7 @@
             <numero_viv></numero_viv> 
             <coste> </coste>
             <resumen>            </resumen>
-
-            <plazo></plazo>
-
-            
-           
-               
+            <plazo></plazo>   
         </cliente>
-
-            
-        
-        
-        
     </sede>
 </Clientes>
