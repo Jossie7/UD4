@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?>
-<xs:schema elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<?xml version="1.0" encoding="Windows-1252"?>
+<xs:schema xmlns="http://tempuri.org/Clientes" elementFormDefault="qualified" targetNamespace="http://tempuri.org/Clientes" xmlns:xs="http://www.w3.org/2001/XMLSchema">
 	<xs:element name="Clientes">
 		<xs:complexType>
 			<xs:sequence>
@@ -10,45 +10,49 @@
 	<xs:element name="sede">
 		<xs:complexType>
 			<xs:sequence>
-				<xs:element minOccurs="0" maxOccurs="unbounded" ref="autor" />
-				<xs:element ref="titulo" />
-        		<xs:element ref="genero" />
-				<xs:element ref="editorial" />
-				<xs:element ref="ISBN" />
-				<xs:element ref="fecha_publicacion" />
+				<xs:element minOccurs="0" maxOccurs="unbounded" ref="direcciones" />
+				<xs:element ref="empleado" />
+				<xs:element ref="fecha_alta" />
+				<xs:element ref="descripcion_cliente" />
+				<xs:element minOccurs="0" maxOccurs="unbounded" ref="cliente" />
 			</xs:sequence>
-			<xs:attribute name="id" type="xs:string" use="required" />
+			<xs:attribute name="codigo" type="xs:string" use="required" />
 		</xs:complexType>
 	</xs:element>
-	<xs:element name="autor">
+	<xs:simpleType name="codigo">
+		<xs:restriction base="xs:string">
+			<xs:pattern value="[A-Za-z]([A-Za-z0-9]){7}"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:element name="direcciones">
 		<xs:complexType>
 			<xs:sequence>
-				<xs:element ref="nombre" />
-				<xs:element ref="apellido1" />
-				<xs:element ref="apellido2" />
+				<xs:element minOccurs="0" maxOccurs="unbounded" ref="direccion" />
 			</xs:sequence>
-      <xs:attribute name="nacionalidad" type="xs:string" use="required" />
 		</xs:complexType>
 	</xs:element>
-
-  <xs:element name="fecha_publicacion">
+	<xs:element name="direccion" type="xs:string" />
+	<xs:element name="empleado" type="xs:string" />
+	<xs:element name="fecha_alta" type="xs:string" />
+	<xs:element name="descripcion_cliente" type="xs:string" />
+	<xs:element name="cliente">
 		<xs:complexType>
 			<xs:sequence>
-				<xs:element ref="dia" />
-				<xs:element ref="mes" />
-				<xs:element ref="año" />
+				<xs:element ref="numero_viv" />
+				<xs:element ref="coste" />
+				<xs:element ref="resumen" />
+				<xs:element ref="plazo" />
 			</xs:sequence>
+			<xs:attribute name="codigoCliente" type="xs:string" use="required" />
 		</xs:complexType>
 	</xs:element>
-
-	<xs:element name="nombre" type="xs:string" />
-	<xs:element name="apellido1" type="xs:string" />
-	<xs:element name="apellido2" type="xs:string" />
-	<xs:element name="genero" type="xs:string" />
-	<xs:element name="titulo" type="xs:string" />
-	<xs:element name="editorial" type="xs:string" />
-	<xs:element name="ISBN" type="xs:integer" />
-  <xs:element name="dia" type="xs:integer" />
-  <xs:element name="mes" type="xs:integer" />
-  <xs:element name="año" type="xs:integer" />
+	<xs:simpleType name="codigoCliente">
+		<xs:restriction base="xs:string">
+			<xs:pattern value="dfd"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:element name="numero_viv" type="xs:string" />
+	<xs:element name="coste" type="xs:string" />
+	<xs:element name="resumen" type="xs:string" />
+	<xs:element name="plazo" type="xs:string" />
 </xs:schema>
