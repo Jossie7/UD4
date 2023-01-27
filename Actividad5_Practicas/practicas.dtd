@@ -1,0 +1,9 @@
+<!ELEMENT practicas (alumno*)>
+<!ELEMENT alumno (NIF,resultado,observaciones*,IP_MAC)>
+<!ELEMENT NIF (#PCDATA)>
+<!ELEMENT resultado (#PCDATA)>
+<!ELEMENT observaciones (anhos,poblacion,enfermedad)>
+<!ELEMENT anhos (#PCDATA)>
+<!ELEMENT poblacion (#PCDATA)>
+<!ELEMENT enfermedad (#PCDATA)>
+<!ELEMENT IP_MAC (#PCDATA)>
