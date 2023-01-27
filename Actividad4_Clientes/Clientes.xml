@@ -1,20 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE Clientes SYSTEM "Clientes.dtd">
 <Clientes>
-    <sede codigo ="">
+    <sede codigo ="A7492597">
         <direcciones>
-            <direccion> </direccion>
+            <direccion>El Prado Nº39</direccion>
             <direccion> </direccion>
         </direcciones>
-        <empleado></empleado>
-        <fecha_alta> </fecha_alta>
-        <descripcion_cliente></descripcion_cliente>
+        <empleado id="1">
+            <nombre>Pepito</nombre>
+            <apellido>Perez</apellido>
+        </empleado>   
+        <fecha_alta>2023-04-07</fecha_alta>
+        <descripcion_cliente>solvente</descripcion_cliente>
        
-        <cliente codigo="">
-            <numero_viv></numero_viv> 
-            <coste> </coste>
-            <resumen>            </resumen>
-            <plazo></plazo>   
+        <cliente codigo="ABC-743">
+            <numero_viv>2</numero_viv> 
+            <coste>1000,25</coste>
+            <resumen>Se encuentra en buenas condiciones</resumen>
+            <plazo>30</plazo>   
         </cliente>
     </sede>
 </Clientes>
