@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<xs:schema xmlns="http://tempuri.org/practicas" elementFormDefault="qualified" targetNamespace="http://tempuri.org/practicas" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="practicas">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element minOccurs="0" maxOccurs="unbounded" ref="alumno" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="alumno">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="NIF" />
+				<xs:element ref="resultado" />
+				<xs:element minOccurs="0" maxOccurs="unbounded" ref="observaciones" />
+				<xs:element ref="IP_MAC" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+    <xs:simpleType name="NIF">
+		<xs:restriction base="xs:string">
+			<xs:length value = "9"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:element name="NIF" type="xs:string" />
+	<xs:element name="resultado" type="xs:boolean" />
+	<xs:element name="observaciones">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="anhos" />
+				<xs:element ref="poblacion" />
+				<xs:element ref="enfermedad" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+    <xs:simpleType name="resultado">
+		<xs:restriction base="xs:boolean">
+			<xs:pattern value="apto"/>
+			<xs:pattern value="no apto"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:element name="anhos" type="xs:integer" />
+	<xs:element name="poblacion" type="xs:string" />
+	<xs:element name="enfermedad" type="xs:string" />
+	<xs:element name="IP_MAC" type="xs:string" />
+</xs:schema>
