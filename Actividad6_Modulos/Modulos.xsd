@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="Modulos">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element minOccurs="1" maxOccurs="unbounded" ref="modulo" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="modulo">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element minOccurs="0" maxOccurs="unbounded" ref="contenidos" />
+				<xs:element ref="nombre" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+    <xs:element name="contenidos">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element minOccurs="0" maxOccurs="unbounded" ref="UD" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="UD">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="tipo" />
+				<xs:element ref="descripcion" />
+			</xs:sequence>
+            <xs:attribute name="id" type="xs:string" use="required" />
+		</xs:complexType>
+	</xs:element>
+
+    <xs:element name="nombre" type="xs:string" />
+	<xs:element name="tipo" type="xs:string" />
+	<xs:element name="descripcion" type="xs:string" />
+</xs:schema>

@@ -12,7 +12,6 @@
         </empleado>   
         <fecha_alta>2023-04-07</fecha_alta>
         <descripcion_cliente>solvente</descripcion_cliente>
-       
         <cliente codigo="ABC-743">
             <numero_viv>2</numero_viv> 
             <coste>1000,25</coste>
