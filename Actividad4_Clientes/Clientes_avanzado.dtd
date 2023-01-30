@@ -1,0 +1,19 @@
+<!ELEMENT Clientes (sede*)>
+<!ELEMENT sede (direcciones*, empleado*, fecha_alta,cliente*)>
+<!ATTLIST sede codigo CDATA #REQUIRED>
+<!ELEMENT direcciones (direccion*)>
+<!ELEMENT direccion (#PCDATA)>
+<!ELEMENT empleado (nombre, apellido)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT apellido (#PCDATA)>
+<!ATTLIST empleado id  CDATA #REQUIRED>
+<!ELEMENT fecha_alta (#PCDATA)>
+<!ELEMENT cliente (descripcion_cliente,numero_viv,vivienda*)>
+<!ATTLIST cliente codigo NMTOKEN  #REQUIRED>
+<!ELEMENT descripcion_cliente (#PCDATA)>
+<!ELEMENT numero_viv (#PCDATA)>
+<!ELEMENT vivienda (coste,resumen,plazo)>
+<!ATTLIST vivienda id  CDATA #REQUIRED>
+<!ELEMENT coste (#PCDATA)>
+<!ELEMENT resumen (#PCDATA)>
+<!ELEMENT plazo (#PCDATA)>
