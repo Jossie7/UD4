@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Modulos SYSTEM "Modulos.dtd">
+<Modulos>
+<modulo>
+    <nombre> </nombre> 
+    <contenidos>
+        <UD id=""> 
+            <tipo> </tipo>
+            <descripcion> </descripcion>
+        </UD>
+        <UD id="">
+            <tipo> </tipo>
+            <descripcion> </descripcion>
+        </UD>
+    </contenidos>  
+</modulo>
+</Modulos>

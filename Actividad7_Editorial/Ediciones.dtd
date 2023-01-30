@@ -1,0 +1,11 @@
+<!ELEMENT Modulos (modulo*)>
+<!ELEMENT Editorial (Nombre, informe*)>
+<!ELEMENT Nombre  (#PCDATA)>
+<!ELEMENT informe (descripcion, fecha_informe,Region*)>
+<!ELEMENT descripcion (#PCDATA)>
+<!ELEMENT fecha_informe (#PCDATA)>
+<!ELEMENT Region (nombre, trimestre*)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT trimestre (id,libros_vendidos)>
+<!ELEMENT id (#PCDATA)>
+<!ELEMENT libros_vendidos (#PCDATA)>
