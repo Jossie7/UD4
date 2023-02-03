@@ -5,12 +5,12 @@
         <lector id="A7425"> 
             <nombres> Bryan  </nombres>
             <apellidos> Rojas </apellidos>
-            <NIE> 18245224A </NIE>
+            <NIE> L18245224 </NIE>
             <domicilio> El Prado N° 39 </domicilio>
             <fecha_nac>07-04-2003 </fecha_nac>
             <afiliado> Sí</afiliado>
         </lector>
-        <libro codigo = "980D">
+        <libro codigo = "cod89">
             <editorial>Alfaguara</editorial>
             <nombre> Conversación en la Catedral </nombre>
             <genero> Drama </genero>
@@ -25,12 +25,12 @@
         <lector id="Z1859"> 
             <nombres> Fabian </nombres>
             <apellidos> Díaz </apellidos>
-            <NIE> 74925973C </NIE>
+            <NIE> C74925973 </NIE>
             <domicilio> Los Callejones 25 </domicilio>
             <fecha_nac>28-05-2002 </fecha_nac>
             <afiliado> No</afiliado>
         </lector>
-        <libro codigo = "123A">
+        <libro codigo = "cod26">
             <editorial>Limonera</editorial>
             <nombre> Divina Comedia </nombre>
             <genero> Tragedia </genero>
@@ -45,12 +45,12 @@
         <lector id="F2598"> 
             <nombres> Joselin </nombres>
             <apellidos> Consuelo </apellidos>
-            <NIE> 41209390G </NIE>
+            <NIE> G41209390 </NIE>
             <domicilio> Pueblo Blancos 45 </domicilio>
             <fecha_nac>16-04-1987 </fecha_nac>
             <afiliado> Si</afiliado>
         </lector>
-        <libro codigo = "789L">
+        <libro codigo = "cod78">
             <editorial>Rio</editorial>
             <nombre> Platero y yo </nombre>
             <genero> lírico </genero>

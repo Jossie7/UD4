@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="Editorial">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="Nombre" type="xs:string" />
+				<xs:element name="informe">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="descripcion" type="xs:string" />
+							<xs:element name="fecha_informe" type="xs:date" />
+							<xs:element maxOccurs="unbounded" name="Region">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="nombre" type="xs:string" />
+										<xs:element maxOccurs="unbounded" name="trimestre">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="id" type="xs:integer" />
+													<xs:element name="libros_vendidos" type="xs:integer" />
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

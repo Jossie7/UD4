@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="Biblioteca">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element minOccurs="1" maxOccurs="unbounded" ref="prestamos" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="prestamos">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element minOccurs="0" maxOccurs="unbounded" ref="lector" />
+				<xs:element minOccurs="0" maxOccurs="unbounded" ref="libro" />
+				<xs:element ref="fecha_prestamo" />
+				<xs:element ref="fecha_retorno" />
+				<xs:element ref="observaciones" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="lector">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="nombres" />
+				<xs:element ref="apellidos" />
+				<xs:element ref="NIE" />
+				<xs:element ref="domicilio" />
+				<xs:element ref="fecha_nac" />
+				<xs:element ref="afiliado" />
+			</xs:sequence>
+			<xs:attribute name="id" type="xs:string" use="required" />
+		</xs:complexType>
+	</xs:element>
+    <xs:simpleType name="id">
+		<xs:restriction base="xs:string">
+			<xs:length value="5"/>
+			<xs:pattern value="[A-Z].*"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:element name="nombres" type="xs:string" />
+	<xs:element name="apellidos" type="xs:string" />
+	<xs:element name="NIE" type="xs:string" />
+	<xs:element name="domicilio" type="xs:string" />
+	<xs:element name="fecha_nac" type="xs:date" />
+	<xs:element name="afiliado" type="xs:boolean" />
+    <xs:simpleType name="NIE">
+		<xs:restriction base="xs:string">
+			<xs:length value="9"/>
+			<xs:pattern value="[A-Z].*"/>
+		</xs:restriction>
+	</xs:simpleType>
+    <xs:simpleType name="afiliado">
+		<xs:restriction base="xs:boolean">
+			<xs:pattern value="sí"/>
+			<xs:pattern value="no"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:element name="libro">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="editorial" />
+				<xs:element ref="nombre" />
+				<xs:element ref="genero" />
+				<xs:element ref="autor" />
+				<xs:element ref="nEjemplares" />
+			</xs:sequence>
+			<xs:attribute name="codigo" type="xs:string" use="required" />
+		</xs:complexType>
+	</xs:element>
+    <xs:simpleType name="codigo">
+		<xs:restriction base="xs:string">
+			<xs:length value="5"/>
+			<xs:pattern value="cod\d{2}"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:element name="editorial" type="xs:string" />
+	<xs:element name="nombre" type="xs:string" />
+	<xs:element name="genero" type="xs:string" />
+	<xs:element name="autor">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="xs:string">
+					<xs:attribute name="nacionalidad" type="xs:string" use="required" />
+				</xs:extension>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="nEjemplares" type="xs:integer" />
+	<xs:element name="fecha_prestamo" type="xs:dateTime" />
+	<xs:element name="fecha_retorno" type="xs:dateTime" />
+	<xs:element name="observaciones" type="xs:string" />
+</xs:schema>
