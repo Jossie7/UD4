@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="concesionario">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="Nombre" />
+				<xs:element ref="ciudad" />
+				<xs:element minOccurs="1" maxOccurs="unbounded" ref="informe_ventas" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="Nombre" type="xs:string" />
+	<xs:element name="ciudad" type="xs:string" />
+	<xs:element name="informe_ventas">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element minOccurs="1" maxOccurs="unbounded" ref="venta" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="venta">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element minOccurs="0" maxOccurs="unbounded" ref="empleado" />
+				<xs:element minOccurs="0" maxOccurs="unbounded" ref="cliente" />
+				<xs:element minOccurs="0" maxOccurs="unbounded" ref="coche" />
+				<xs:element ref="formaPago" />
+				<xs:element ref="observaciones" />
+				<xs:element ref="opcionGarantia" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="empleado">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="nombre" />
+				<xs:element ref="apellido" />
+				<xs:element ref="edad" />
+				<xs:element ref="DNI" />
+				<xs:element ref="teléfono" />
+				<xs:element ref="fecha_incorporacion" />
+			</xs:sequence>
+			<xs:attribute name="id" type="xs:integer" use="required" />
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="nombre" type="xs:string" />
+	<xs:element name="apellido" type="xs:string" />
+	<xs:element name="edad" type="xs:integer" />
+	<xs:element name="DNI" type="xs:string" />
+	<xs:element name="teléfono" type="xs:string" />
+	<xs:element name="fecha_incorporacion" type="xs:date" />
+    <xs:simpleType name="DNI">
+		<xs:restriction base="xs:string">
+			<xs:length value="9"/>
+			<xs:pattern value="\d[A-Z]"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:element name="cliente">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="nombres" />
+				<xs:element ref="apellidos" />
+				<xs:element ref="NIE" />
+				<xs:element ref="telef" />
+				<xs:element minOccurs="0" maxOccurs="1" ref="NSS" />
+				<xs:element ref="direccion" />
+				<xs:element ref="poblacion" />
+				<xs:element ref="codigoPostal" />
+				<xs:element ref="fecha_nacimiento" />
+			</xs:sequence>
+			<xs:attribute name="codigo" type="xs:string" use="required" />
+		</xs:complexType>
+	</xs:element>
+    <xs:simpleType name="codigo">
+		<xs:restriction base="xs:string">
+			<xs:length value="6"/>
+			<xs:pattern value="COD.+"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:element name="nombres" type="xs:string" />
+	<xs:element name="apellidos" type="xs:string" />
+	<xs:element name="NIE" type="xs:string" />
+	<xs:element name="telef" type="xs:string" />
+	<xs:element name="NSS" type="xs:string" />
+	<xs:element name="direccion" type="xs:string" />
+	<xs:element name="poblacion" type="xs:string" />
+	<xs:element name="codigoPostal" type="xs:string" />
+	<xs:element name="fecha_nacimiento" type="xs:date" />
+    <xs:simpleType name="NIE">
+		<xs:restriction base="xs:string">
+			<xs:length value="9"/>
+			<xs:pattern value="\d[A-Z]"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:element name="coche">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="matricula" />
+				<xs:element ref="marca" />
+				<xs:element ref="modelo" />
+				<xs:element ref="cilindrada" />
+				<xs:element ref="potencia" />
+				<xs:element ref="color" />
+				<xs:element ref="motor" />
+				<xs:element ref="fechaFabricacion" />
+				<xs:element ref="precio" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="matricula" type="xs:string" />
+	<xs:element name="marca" type="xs:string" />
+	<xs:element name="modelo" type="xs:string" />
+	<xs:element name="cilindrada" type="xs:string" />
+	<xs:element name="potencia" type="xs:integer" />
+	<xs:element name="color" type="xs:string" />
+	<xs:element name="motor" type="xs:string" />
+	<xs:element name="fechaFabricacion" type="xs:date" />
+	<xs:element name="precio" type="xs:decimal" />
+	<xs:element name="formaPago" type="xs:string" />
+	<xs:element name="observaciones" type="xs:string" />
+	<xs:element name="opcionGarantia" type="xs:string" />
+    <xs:simpleType name="formaPago">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="efectivo"/>
+            <xs:enumeration value="banco"/>
+			<xs:enumeration value="web"/>
+		</xs:restriction>
+	</xs:simpleType>
+    <xs:simpleType name="opcionGarantia">
+		<xs:restriction base="xs:boolean">
+			<xs:pattern value="sí"/>
+			<xs:pattern value="no"/>
+		</xs:restriction>
+	</xs:simpleType>
+</xs:schema>

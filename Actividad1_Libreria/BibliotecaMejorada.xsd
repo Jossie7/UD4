@@ -49,12 +49,6 @@
 			<xs:pattern value="[A-Z].*"/>
 		</xs:restriction>
 	</xs:simpleType>
-    <xs:simpleType name="afiliado">
-		<xs:restriction base="xs:boolean">
-			<xs:pattern value="sí"/>
-			<xs:pattern value="no"/>
-		</xs:restriction>
-	</xs:simpleType>
 	<xs:element name="libro">
 		<xs:complexType>
 			<xs:sequence>

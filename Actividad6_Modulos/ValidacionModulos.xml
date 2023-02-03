@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Modulos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="Modulos.xsd">
+    <modulo>
+        <nombre> FOL </nombre> 
+        <contenidos>
+            <UD id="1"> 
+                <tipo>Derecho</tipo>
+                <descripcion>Informar acerca de derechos laborales </descripcion>
+            </UD>
+            <UD id="2">
+                <tipo> Programación </tipo>
+                <descripcion>Aprender JAVA </descripcion>
+            </UD>
+        </contenidos>  
+    </modulo>
+</Modulos>

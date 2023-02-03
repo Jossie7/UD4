@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="Windows-1252"?>
-<xs:schema xmlns="http://tempuri.org/Clientes" elementFormDefault="qualified" targetNamespace="http://tempuri.org/Clientes" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
 	<xs:element name="Clientes">
 		<xs:complexType>
 			<xs:sequence>
@@ -43,7 +43,7 @@
 	</xs:element>
 	<xs:element name="direccion" type="xs:string" />
 	<xs:element name="fecha_alta" type="xs:date" />
-	<xs:element name="descripcion_cliente" type="xs:boolean" />
+	<xs:element name="descripcion_cliente" type="xs:string" />
 	<xs:element name="cliente">
 		<xs:complexType>
 			<xs:sequence>
@@ -62,9 +62,9 @@
 		</xs:restriction>
 	</xs:simpleType>
 	<xs:simpleType name="descripcion_cliente">
-		<xs:restriction base="xs:boolean">
-			<xs:pattern value="solvente"/>
-			<xs:pattern value="insolvente"/>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="solvente"/>
+			<xs:enumeration value="insolvente"/>
 		</xs:restriction>
 	</xs:simpleType>
 	<xs:simpleType name="coste">

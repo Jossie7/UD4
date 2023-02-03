@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<practicas xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="practicas.xsd">
+	<alumno>
+		<NIF>95555555K</NIF>
+		<resultado>Apto</resultado>
+		<observaciones>
+			<anhos>20</anhos>
+			<poblacion>Lugo</poblacion>
+			<enfermedad>ukuk</enfermedad>
+		</observaciones>
+		<IP_MAC>172.168.1.1</IP_MAC> <!-- Los alumnos tienen IP o MAC pero no ambas -->
+	</alumno>
+</practicas>

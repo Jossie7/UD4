@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE concesionario SYSTEM "ConcesionarioMejorado.dtd">
-<concesionario>
+<concesionario xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="ConcesionarioMejorado.xsd">
     <Nombre>Toyota SAC </Nombre>
     <ciudad> Madrid </ciudad>
     <informe_ventas>
@@ -11,7 +11,7 @@
                 <edad> 32 </edad>
                 <DNI> 41813658D </DNI>
                 <teléfono> 6485639 </teléfono>
-                <fecha_incorporacion>02-05-2021</fecha_incorporacion>
+                <fecha_incorporacion>2021-05-02</fecha_incorporacion>
             </empleado>
             <cliente codigo="COD143">
                 <nombres> Moises Jesus</nombres>
@@ -22,7 +22,7 @@
                 <direccion> Prado 39 </direccion>
                 <poblacion> Ubrique </poblacion>
                 <codigoPostal> 11600 </codigoPostal>
-                <fecha_nacimiento> 07-04-1983 </fecha_nacimiento>
+                <fecha_nacimiento> 1983-05-20 </fecha_nacimiento>
             </cliente>
             <coche>
                 <matricula> 1111-BAB </matricula>
@@ -32,7 +32,7 @@
                 <potencia> 82</potencia>
                 <color> grismar10 </color>
                 <motor> diesel </motor>
-                <fechaFabricacion> 12-12-1990 </fechaFabricacion>
+                <fechaFabricacion> 1990-12-25 </fechaFabricacion>
                 <precio> 7500.10</precio>
             </coche>
             <formaPago> efectivo</formaPago>

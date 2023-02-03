@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE Modulos SYSTEM "Modulos.dtd">
+<!DOCTYPE practicas SYSTEM "Modulos.dtd">
 <Modulos>
 <modulo>
     <nombre> </nombre> 
     <contenidos>
-        <UD id=""> 
-            <tipo> </tipo>
+        <UD id="1"> 
+            <tipo></tipo>
             <descripcion> </descripcion>
         </UD>
         <UD id="">
