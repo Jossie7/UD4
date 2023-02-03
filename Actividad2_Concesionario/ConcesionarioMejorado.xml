@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concesionario SYSTEM "ConcesionarioMejorado.dtd">
+<concesionario>
+    <Nombre> </Nombre>
+    <ciudad> </ciudad>
+    <informe_ventas>
+        <venta>
+            <empleado id= "45"> 
+                <nombre> Pepito  </nombre>
+                <apellido> Juarez </apellido>
+                <edad> 32 </edad>
+                <DNI> 41813658D </DNI>
+                <teléfono> 6485639 </teléfono>
+                <fecha_incorporacion>02-05-2021</fecha_incorporacion>
+            </empleado>
+            <cliente codigo="JZ143">
+                <nombres> Moises Jesus</nombres>
+                <apellidos> Morales Duarez </apellidos>
+                <NIE> 85478963C</NIE>
+                <telef> 6541258</telef>
+                <NSS> "" </NSS>
+                <direccion> Prado 39 </direccion>
+                <poblacion> Ubrique </poblacion>
+                <codigoPostal> 11600 </codigoPostal>
+                <fecha_nacimiento> 07-04-1983 </fecha_nacimiento>
+            </cliente>
+            <coche>
+                <matricula> 1111-BAB </matricula>
+                <marca> Renault </marca>
+                <modelo> Passat </modelo>
+                <cilindrada> 1,4 </cilindrada>
+                <potencia> 82</potencia>
+                <color> grismar10 </color>
+                <motor> diesel </motor>
+                <fechaFabricacion> 12-12-1990 </fechaFabricacion>
+                <precio> 7500,10</precio>
+            </coche>
+            <formaPago> efectivo/banco/internet</formaPago>
+            <observaciones> El coche tiene algunos defectos </observaciones>
+            <opcionGarantia> sí </opcionGarantia>
+        </venta>
+    </informe_ventas>
+</concesionario>

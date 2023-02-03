@@ -1,0 +1,23 @@
+<!ELEMENT Biblioteca (prestamos*)>
+<!ELEMENT prestamos (lector*,libro*,fecha_prestamo,fecha_retorno,observaciones)>
+<!ELEMENT lector (nombres,apellidos,NIE,domicilio,fecha_nac,afiliado)>
+<!ATTLIST lector id CDATA #REQUIRED>
+    <!ELEMENT nombres (#PCDATA)>
+    <!ELEMENT apellidos (#PCDATA)>
+    <!ELEMENT NIE (#PCDATA)>
+    <!ELEMENT domicilio (#PCDATA)>
+    <!ELEMENT fecha_nac (#PCDATA)>
+    <!ELEMENT afiliado (#PCDATA)>
+<!ELEMENT libro (editorial,nombre,genero,autor,nEjemplares)>
+<!ATTLIST libro codigo CDATA #REQUIRED>
+    <!ELEMENT editorial (#PCDATA)>
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT genero (#PCDATA)>
+    <!ELEMENT autor (#PCDATA)>
+    <!ATTLIST autor nacionalidad CDATA #REQUIRED>
+    <!ELEMENT nEjemplares (#PCDATA)>
+<!ELEMENT fecha_prestamo (#PCDATA)>
+<!ELEMENT fecha_retorno (#PCDATA)>
+<!ELEMENT observaciones (#PCDATA)>
+
+    

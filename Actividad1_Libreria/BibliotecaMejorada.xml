@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Biblioteca SYSTEM "BibliotecaMejorada.dtd">
+<Biblioteca>
+    <prestamos>
+        <lector id="A7425"> 
+            <nombres> Bryan  </nombres>
+            <apellidos> Rojas </apellidos>
+            <NIE> 18245224A </NIE>
+            <domicilio> El Prado N° 39 </domicilio>
+            <fecha_nac>07-04-2003 </fecha_nac>
+            <afiliado> Sí</afiliado>
+        </lector>
+        <libro codigo = "980D">
+            <editorial>Alfaguara</editorial>
+            <nombre> Conversación en la Catedral </nombre>
+            <genero> Drama </genero>
+            <autor nacionalidad = "peruana"> Mario Vargas Llosa </autor>
+            <nEjemplares> 4 </nEjemplares>
+        </libro>
+        <fecha_prestamo> 2022-04-02T16:45:52 </fecha_prestamo>
+        <fecha_retorno> 2022-05-01T18:00:00 </fecha_retorno>
+        <observaciones> Hojas rotas y amarillentas</observaciones>
+    </prestamos>
+    <prestamos>
+        <lector id="Z1859"> 
+            <nombres> Fabian </nombres>
+            <apellidos> Díaz </apellidos>
+            <NIE> 74925973C </NIE>
+            <domicilio> Los Callejones 25 </domicilio>
+            <fecha_nac>28-05-2002 </fecha_nac>
+            <afiliado> No</afiliado>
+        </lector>
+        <libro codigo = "123A">
+            <editorial>Limonera</editorial>
+            <nombre> Divina Comedia </nombre>
+            <genero> Tragedia </genero>
+            <autor nacionalidad = "peruana"> César Vallejo </autor>
+            <nEjemplares> 2 </nEjemplares>
+        </libro>
+        <fecha_prestamo> 2021-02-06T11:23:11 </fecha_prestamo>
+        <fecha_retorno> 2020-03-01T21:15:00 </fecha_retorno>
+        <observaciones> Libro en buenas condiciones</observaciones>
+    </prestamos>
+    <prestamos>
+        <lector id="F2598"> 
+            <nombres> Joselin </nombres>
+            <apellidos> Consuelo </apellidos>
+            <NIE> 41209390G </NIE>
+            <domicilio> Pueblo Blancos 45 </domicilio>
+            <fecha_nac>16-04-1987 </fecha_nac>
+            <afiliado> Si</afiliado>
+        </lector>
+        <libro codigo = "789L">
+            <editorial>Rio</editorial>
+            <nombre> Platero y yo </nombre>
+            <genero> lírico </genero>
+            <autor nacionalidad = "puertorriqueño"> Juan Ramón Jiménez </autor>
+            <nEjemplares> 16 </nEjemplares>
+        </libro>
+        <fecha_prestamo> 2023-01-03T12:59:10 </fecha_prestamo>
+        <fecha_retorno> 2023-01-09T23:59:59 </fecha_retorno>
+        <observaciones> Portada rayada con bolígrafo </observaciones>
+    </prestamos>
+</Biblioteca>
