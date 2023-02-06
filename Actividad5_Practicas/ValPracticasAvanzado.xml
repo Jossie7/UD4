@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE practicas SYSTEM "practicasAvanzado.dtd">
+<practicas>
+    <cicloFormativo>
+        <nombre>Desarrollo de Aplicaciones web </nombre>
+        <horas_necesarias> 235 </horas_necesarias>
+        <requisitos> Saber programación y lenguaje de marcas </requisitos>
+        <alumPracticantes>
+            <alumno id ="74H">
+                <nombres> Melinda  </nombres>
+                <apellidos> Flores </apellidos>
+                <origen> España </origen>
+                <edad> 18 </edad>
+                <fecha_nac> 2002-02-12</fecha_nac>
+                <fecha_inicio> 2023-01-05T23:11:52</fecha_inicio>
+                <horas_cumplidad> 285 </horas_cumplidad>
+                <practicasCumplidas> true </practicasCumplidas>
+                <ocupacion> diseñadora de páginas web </ocupacion>
+                <lugarPractica> 
+                    <nombreEmpresa> Mancera </nombreEmpresa>
+                    <direccion> San Juan Nº 87</direccion>
+                    <sueldoMinimo> 1025.25 </sueldoMinimo>
+                    <especialidades> sistemas operativos y creacion de paginas web</especialidades>
+                </lugarPractica>
+                <observaciones> Realizó un estupendo trabajo </observaciones>
+                <posibilidadContrato>true</posibilidadContrato>
+            </alumno>
+        </alumPracticantes>
+    </cicloFormativo>
+</practicas>

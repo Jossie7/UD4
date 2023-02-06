@@ -6,4 +6,4 @@
 <!ELEMENT anhos (#PCDATA)>
 <!ELEMENT poblacion (#PCDATA)>
 <!ELEMENT enfermedad (#PCDATA)>
-<!ELEMENT IP_MAC (#PCDATA)>
+<!ELEMENT IP_MAC  (#PCDATA)>

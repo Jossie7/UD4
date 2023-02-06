@@ -10,8 +10,8 @@
 	<xs:element name="modulo">
 		<xs:complexType>
 			<xs:sequence>
-				<xs:element minOccurs="0" maxOccurs="unbounded" ref="contenidos" />
-				<xs:element minOccurs="0" maxOccurs="unbounded"  ref="nombre" />
+				<xs:element minOccurs="0" maxOccurs="unbounded" ref="nombre" />
+				<xs:element minOccurs="1" maxOccurs="unbounded"  ref="contenidos" />
 			</xs:sequence>
 		</xs:complexType>
 	</xs:element>

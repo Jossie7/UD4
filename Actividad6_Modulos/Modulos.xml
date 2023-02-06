@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE practicas SYSTEM "Modulos.dtd">
+<!DOCTYPE Modulos SYSTEM "Modulos.dtd">
 <Modulos>
 <modulo>
-    <nombre> </nombre> 
+    <nombre> FOL </nombre> 
     <contenidos>
         <UD id="1"> 
-            <tipo></tipo>
-            <descripcion> </descripcion>
+            <tipo>Derecho</tipo>
+            <descripcion> Informar acerca de derechos laborales </descripcion>
         </UD>
-        <UD id="">
-            <tipo> </tipo>
-            <descripcion> </descripcion>
+        <UD id="2">
+            <tipo> Programación </tipo>
+            <descripcion> Aprender JAVA </descripcion>
         </UD>
     </contenidos>  
 </modulo>

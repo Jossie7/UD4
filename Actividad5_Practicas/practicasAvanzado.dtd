@@ -1,0 +1,24 @@
+<!ELEMENT practicas (cicloFormativo*)>
+<!ELEMENT cicloFormativo (nombre,horas_necesarias,requisitos,alumPracticantes*)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT horas_necesarias (#PCDATA)>
+<!ELEMENT requisitos (#PCDATA)>
+<!ELEMENT alumPracticantes (alumno*)>
+<!ELEMENT alumno (nombres,apellidos, origen,edad,fecha_nac,fecha_inicio,horas_cumplidad,practicasCumplidas,ocupacion,lugarPractica*, observaciones, posibilidadContrato)>
+<!ELEMENT nombres (#PCDATA)>
+<!ELEMENT apellidos (#PCDATA)>
+<!ELEMENT origen (#PCDATA)>
+<!ELEMENT edad  (#PCDATA)>
+<!ELEMENT fecha_nac (#PCDATA)>
+<!ELEMENT fecha_inicio (#PCDATA)>
+<!ELEMENT horas_cumplidad (#PCDATA)>
+<!ELEMENT practicasCumplidas (#PCDATA)>
+<!ELEMENT ocupacion  (#PCDATA)>
+<!ELEMENT lugarPractica (nombreEmpresa,direccion,sueldoMinimo,especialidades)>
+<!ELEMENT observaciones (#PCDATA)>
+<!ELEMENT posibilidadContrato (#PCDATA)>
+<!ATTLIST alumno id CDATA #REQUIRED>
+<!ELEMENT nombreEmpresa (#PCDATA)>
+<!ELEMENT direccion  (#PCDATA)>
+<!ELEMENT sueldoMinimo (#PCDATA)>
+<!ELEMENT especialidades  (#PCDATA)>

@@ -40,6 +40,12 @@
 			<xs:enumeration value="no apto"/>
 		</xs:restriction>
 	</xs:simpleType>
+	<xs:simpleType name="IP_MAC">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="IP"/>
+			<xs:enumeration value="MAC"/>
+		</xs:restriction>
+	</xs:simpleType>
 	<xs:element name="anhos" type="xs:integer" />
 	<xs:element name="poblacion" type="xs:string" />
 	<xs:element name="enfermedad" type="xs:string" />

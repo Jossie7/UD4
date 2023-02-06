@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="practicas">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element minOccurs="0" maxOccurs="unbounded" ref="cicloFormativo" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="cicloFormativo">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="nombre" />
+				<xs:element ref="horas_necesarias" />
+				<xs:element ref="requisitos" />
+				<xs:element minOccurs="0" maxOccurs="unbounded" ref="alumPracticantes" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="nombre" type="xs:string" />
+	<xs:element name="horas_necesarias" type="xs:string" />
+	<xs:element name="requisitos" type="xs:string" />
+	<xs:element name="alumPracticantes">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element minOccurs="0" maxOccurs="unbounded" ref="alumno" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="alumno">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="nombres" />
+				<xs:element ref="apellidos" />
+				<xs:element ref="origen" />
+				<xs:element ref="edad" />
+				<xs:element ref="fecha_nac" />
+				<xs:element ref="fecha_inicio" />
+				<xs:element ref="horas_cumplidad" />
+				<xs:element ref="practicasCumplidas" />
+				<xs:element ref="ocupacion" />
+				<xs:element minOccurs="0" maxOccurs="unbounded" ref="lugarPractica" />
+				<xs:element ref="observaciones" />
+				<xs:element ref="posibilidadContrato" />
+			</xs:sequence>
+			<xs:attribute name="id" type="xs:string" use="required" />
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="nombres" type="xs:string" />
+	<xs:element name="apellidos" type="xs:string" />
+	<xs:element name="origen" type="xs:string" />
+	<xs:element name="edad" type="xs:integer" />
+	<xs:element name="fecha_nac" type="xs:date" />
+	<xs:element name="fecha_inicio" type="xs:dateTime" />
+	<xs:element name="horas_cumplidad" type="xs:integer" />
+	<xs:element name="practicasCumplidas" type="xs:boolean" />
+	<xs:element name="ocupacion" type="xs:string" />
+	<xs:element name="lugarPractica">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="nombreEmpresa" />
+				<xs:element ref="direccion" />
+				<xs:element ref="sueldoMinimo" />
+				<xs:element ref="especialidades" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="observaciones" type="xs:string" />
+	<xs:element name="posibilidadContrato" type="xs:boolean" />
+	<xs:element name="nombreEmpresa" type="xs:string" />
+	<xs:element name="direccion" type="xs:string" />
+	<xs:element name="sueldoMinimo" type="xs:decimal" />
+	<xs:element name="especialidades" type="xs:string" />
+</xs:schema>
