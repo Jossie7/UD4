@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="Clientes">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element minOccurs="0" maxOccurs="unbounded" ref="sede" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="sede">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element minOccurs="0" maxOccurs="unbounded" ref="direcciones" />
+				<xs:element minOccurs="0" maxOccurs="unbounded" ref="empleado" />
+				<xs:element ref="fecha_alta" />
+				<xs:element minOccurs="0" maxOccurs="unbounded" ref="cliente" />
+			</xs:sequence>
+			<xs:attribute name="codigo" type="xs:string" use="required" />
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="direcciones">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element minOccurs="0" maxOccurs="unbounded" ref="direccion" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="direccion" type="xs:string" />
+	<xs:element name="empleado">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="nombres" />
+				<xs:element ref="apellidos" />
+				<xs:element ref="puesto" />
+				<xs:element ref="poblacion" />
+				<xs:element ref="edad" />
+				<xs:element ref="fecha_nacimiento" />
+			</xs:sequence>
+			<xs:attribute name="id" type="xs:string" use="required" />
+		</xs:complexType>
+	</xs:element>
+    <xs:simpleType name="puesto">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="secretario"/>
+			<xs:enumeration value="supervisor"/>
+            <xs:enumeration value="inmobiliario"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:element name="nombres" type="xs:string" />
+	<xs:element name="apellidos" type="xs:string" />
+	<xs:element name="puesto" type="xs:string" />
+	<xs:element name="poblacion" type="xs:string" />
+	<xs:element name="edad" type="xs:integer" />
+	<xs:element name="fecha_nacimiento" type="xs:date" />
+	<xs:element name="fecha_alta" type="xs:date" />
+	<xs:element name="cliente">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="nombre" />
+				<xs:element ref="apellido" />
+				<xs:element ref="trabajo" />
+				<xs:element ref="historial" />
+				<xs:element ref="descripcion_cliente" />
+				<xs:element ref="numero_viv" />
+				<xs:element minOccurs="0" maxOccurs="unbounded" ref="vivienda" />
+				<xs:element minOccurs="0" maxOccurs="unbounded" ref="seguroSocial" />
+				<xs:element ref="aprobacion" />
+			</xs:sequence>
+			<xs:attribute name="codigo" type="xs:NMTOKEN" use="required" />
+		</xs:complexType>
+	</xs:element>
+    <xs:simpleType name="descripcion_cliente">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="procedente"/>
+			<xs:enumeration value="improcedente"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:element name="nombre" type="xs:string" />
+	<xs:element name="apellido" type="xs:string" />
+	<xs:element name="trabajo" type="xs:string" />
+	<xs:element name="historial" type="xs:string" />
+	<xs:element name="descripcion_cliente" type="xs:string" />
+	<xs:element name="numero_viv" type="xs:integer" />
+	<xs:element name="aprobacion" type="xs:boolean" />
+	<xs:element name="vivienda">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="antiguedad_anhos" />
+				<xs:element ref="coste" />
+				<xs:element ref="resumen" />
+				<xs:element ref="plazo" />
+			</xs:sequence>
+			<xs:attribute name="id" type="xs:string" use="required" />
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="antiguedad_anhos" type="xs:integer" />
+	<xs:element name="coste" type="xs:decimal" />
+	<xs:element name="resumen" type="xs:string" />
+	<xs:element name="plazo" type="xs:integer" />
+	<xs:element name="seguroSocial">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="nivel" />
+				<xs:element ref="categoria" />
+			</xs:sequence>
+			<xs:attribute name="nss" type="xs:string" use="required" />
+		</xs:complexType>
+	</xs:element>
+    <xs:simpleType name="nss">
+		<xs:restriction base="xs:string">
+			<xs:length value="9"/>
+			<xs:pattern value="\d[A-Z]"></xs:pattern>
+		</xs:restriction>
+	</xs:simpleType>
+    <xs:simpleType name="nivel">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="alto"/>
+			<xs:enumeration value="bajo"/>
+            <xs:enumeration value="intermedio"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:element name="nivel" type="xs:string" />
+	<xs:element name="categoria" type="xs:string" />
+</xs:schema>

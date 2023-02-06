@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE Clientes SYSTEM "Clientes_avanzado.dtd">
-<Clientes>
+<Clientes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="Clientes_avanzado.xsd">
     <sede codigo ="G89">
         <direcciones>
             <direccion>El Prado Nº39</direccion>
@@ -20,11 +20,11 @@
             <apellido> Magdalena </apellido>
             <trabajo> petaquero </trabajo>
             <historial> Es nueva  cleinte con buen historial financiero </historial>
-            <descripcion_cliente>solvente</descripcion_cliente>
+            <descripcion_cliente>procedente</descripcion_cliente>
             <numero_viv>2</numero_viv> 
             <vivienda id="001">
                 <antiguedad_anhos> 3 </antiguedad_anhos>
-                <coste>1000,25</coste>
+                <coste>1000.25</coste>
                 <resumen>Se encuentra en buenas condiciones</resumen>
                 <plazo>30</plazo>   
             </vivienda>
@@ -32,7 +32,7 @@
                 <nivel> alto </nivel>
                 <categoria> nivel 4 </categoria>
             </seguroSocial>
-            <aprobacion> si </aprobacion>
+            <aprobacion> true </aprobacion>
             
         </cliente>
     </sede>

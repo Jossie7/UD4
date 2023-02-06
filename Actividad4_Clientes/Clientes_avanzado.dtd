@@ -3,17 +3,31 @@
 <!ATTLIST sede codigo CDATA #REQUIRED>
 <!ELEMENT direcciones (direccion*)>
 <!ELEMENT direccion (#PCDATA)>
-<!ELEMENT empleado (nombre, apellido)>
-<!ELEMENT nombre (#PCDATA)>
-<!ELEMENT apellido (#PCDATA)>
+<!ELEMENT empleado (nombres, apellidos,puesto,poblacion,edad,fecha_nacimiento)>
+<!ELEMENT nombres (#PCDATA)>
+<!ELEMENT apellidos (#PCDATA)>
+<!ELEMENT puesto (#PCDATA)>
+<!ELEMENT poblacion (#PCDATA)>
+<!ELEMENT edad (#PCDATA)>
+<!ELEMENT fecha_nacimiento (#PCDATA)>
 <!ATTLIST empleado id  CDATA #REQUIRED>
 <!ELEMENT fecha_alta (#PCDATA)>
-<!ELEMENT cliente (descripcion_cliente,numero_viv,vivienda*)>
+<!ELEMENT cliente (nombre,apellido,trabajo, historial,descripcion_cliente,numero_viv,vivienda*,seguroSocial*, aprobacion)>
 <!ATTLIST cliente codigo NMTOKEN  #REQUIRED>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT apellido (#PCDATA)>
+<!ELEMENT trabajo (#PCDATA)>
+<!ELEMENT historial (#PCDATA)>
 <!ELEMENT descripcion_cliente (#PCDATA)>
 <!ELEMENT numero_viv (#PCDATA)>
-<!ELEMENT vivienda (coste,resumen,plazo)>
+<!ELEMENT aprobacion (#PCDATA)>
+<!ELEMENT vivienda (antiguedad_anhos,coste,resumen,plazo)>
 <!ATTLIST vivienda id  CDATA #REQUIRED>
+<!ELEMENT antiguedad_anhos (#PCDATA)>
 <!ELEMENT coste (#PCDATA)>
 <!ELEMENT resumen (#PCDATA)>
 <!ELEMENT plazo (#PCDATA)>
+<!ELEMENT seguroSocial (nivel,categoria)>
+<!ELEMENT nivel (#PCDATA)>
+<!ELEMENT categoria (#PCDATA)>
+<!ATTLIST seguroSocial nss  CDATA #REQUIRED>
