@@ -46,6 +46,12 @@
 			<xs:attribute name="id" type="xs:string" use="required" />
 		</xs:complexType>
 	</xs:element>
+	<xs:simpleType name="id">
+		<xs:restriction base="xs:string">
+			<xs:pattern value="\d[A-Z]"/>
+			<xs:length value = "3"/>
+		</xs:restriction>
+	</xs:simpleType>
 	<xs:element name="nombres" type="xs:string" />
 	<xs:element name="apellidos" type="xs:string" />
 	<xs:element name="origen" type="xs:string" />

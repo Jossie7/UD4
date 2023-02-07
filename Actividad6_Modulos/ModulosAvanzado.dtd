@@ -1,0 +1,21 @@
+<!ELEMENT Modulos (modulo*)>
+<!ELEMENT modulo (nombre, tutor, aula, cursos*,posibilidadBeca)>
+<!ATTLIST modulo cod CDATA #REQUIRED>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT tutor (#PCDATA)>
+<!ELEMENT aula (#PCDATA)>
+<!ELEMENT posibilidadBeca (#PCDATA)>
+<!ELEMENT cursos (curso*)>
+<!ELEMENT curso (name, profesor,horas_semanales, UDS*,alumnosInscritos,promedioGeneral)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT profesor (#PCDATA)>
+<!ELEMENT horas_semanales (#PCDATA)>
+<!ELEMENT alumnosInscritos (#PCDATA)>
+<!ELEMENT promedioGeneral (#PCDATA)>
+<!ATTLIST name nSerie CDATA #REQUIRED>
+<!ELEMENT UDS (Ud*)>
+<!ELEMENT Ud (numero, tema,actividades, fechaExamen)>
+<!ELEMENT numero (#PCDATA)>
+<!ELEMENT tema (#PCDATA)>
+<!ELEMENT actividades (#PCDATA)>
+<!ELEMENT fechaExamen (#PCDATA)>
