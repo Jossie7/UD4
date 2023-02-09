@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Modulos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="ModulosAvanzado.xsd">
+    <modulo cod="A">
+        <nombre> Desarrollo de aplicaciones web </nombre>
+        <tutor> Ana </tutor>
+        <aula> DAW1 </aula>
+        <cursos>
+            <curso>
+                <name nSerie="48572"> Lenguaje de Marcas </name>
+                <profesor> Ana Gonzales </profesor>
+                <horas_semanales> 4 </horas_semanales>
+                <UDS>
+                    <Ud> 
+                        <numero> 1 </numero>
+                        <tema> HTML </tema>
+                        <actividades> Crear el html de un cuerpo</actividades>
+                        <fechaExamen> 2023-02-02 </fechaExamen>
+                    </Ud>
+                    <Ud> 
+                        <numero> 2 </numero>
+                        <tema> XML </tema>
+                        <actividades> Crear el xml de una biblioteca</actividades>
+                        <fechaExamen> 2023-01-07 </fechaExamen>
+                    </Ud>
+                </UDS>
+                <alumnosInscritos> 18 </alumnosInscritos>
+                <promedioGeneral> 7.32 </promedioGeneral>   
+            </curso>
+            <curso>
+                <name nSerie="12002"> Programacion </name>
+                <profesor> Frenacisco</profesor>
+                <horas_semanales> 6 </horas_semanales>
+                <UDS>
+                    <Ud> 
+                        <numero> 1 </numero>
+                        <tema> pseudocodigo </tema>
+                        <actividades> Itinerancias </actividades>
+                        <fechaExamen> 2023-02-16</fechaExamen>
+                    </Ud>
+                    <Ud> 
+                        <numero> 2 </numero>
+                        <tema> java </tema>
+                        <actividades> Crear clases y objetos</actividades>
+                        <fechaExamen> 2023-02-25 </fechaExamen>
+                    </Ud>
+                </UDS>
+                <alumnosInscritos> 17 </alumnosInscritos>
+                <promedioGeneral> 5.04 </promedioGeneral>
+            </curso>
+        </cursos>
+        <posibilidadBeca> true </posibilidadBeca>
+    </modulo>
+    <modulo cod="B">
+        <nombre> Asistencia a la Direccion </nombre>
+        <tutor> Pepita Perez </tutor>
+        <aula> AD12 </aula>
+        <cursos>
+            <curso>
+                <name nSerie="98562"> Derecho empresarial</name>
+                <profesor> Julia Rocio </profesor>
+                <horas_semanales> 6 </horas_semanales>
+                <UDS>
+                    <Ud> 
+                        <numero> 1 </numero>
+                        <tema> Drecho laboral </tema>
+                        <actividades> Realizar una entrevista </actividades>
+                        <fechaExamen> 2022-12-12 </fechaExamen>
+                    </Ud>
+                    <Ud> 
+                        <numero> 2 </numero>
+                        <tema> Gestoria </tema>
+                        <actividades> Realizar una simliacion de un juicio </actividades>
+                        <fechaExamen> 2024-08-08 </fechaExamen>
+                    </Ud>
+                </UDS>
+                <alumnosInscritos> 14 </alumnosInscritos>
+                <promedioGeneral> 7.32 </promedioGeneral>   
+            </curso>
+        </cursos>
+        <posibilidadBeca> false </posibilidadBeca>
+    </modulo>
+</Modulos>

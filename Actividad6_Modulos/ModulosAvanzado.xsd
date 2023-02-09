@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="Modulos">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element minOccurs="0" maxOccurs="unbounded" ref="modulo" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="modulo">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="nombre" />
+				<xs:element ref="tutor" />
+				<xs:element ref="aula" />
+				<xs:element minOccurs="0" maxOccurs="unbounded" ref="cursos" />
+				<xs:element ref="posibilidadBeca" />
+			</xs:sequence>
+			<xs:attribute name="cod" type="xs:string" use="required" />
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="nombre" type="xs:string" />
+	<xs:element name="tutor" type="xs:string" />
+	<xs:element name="aula" type="xs:string" />
+	<xs:element name="posibilidadBeca" type="xs:boolean" />
+	<xs:element name="cursos">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element minOccurs="0" maxOccurs="unbounded" ref="curso" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="curso">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="name" />
+				<xs:element ref="profesor" />
+				<xs:element ref="horas_semanales" />
+				<xs:element minOccurs="0" maxOccurs="unbounded" ref="UDS" />
+				<xs:element ref="alumnosInscritos" />
+				<xs:element ref="promedioGeneral" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="name">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="xs:string">
+					<xs:attribute name="nSerie" type="xs:string" use="required" />
+				</xs:extension>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="profesor" type="xs:string" />
+	<xs:element name="horas_semanales" type="xs:integer" />
+	<xs:element name="alumnosInscritos" type="xs:integer" />
+	<xs:element name="promedioGeneral" type="xs:decimal" />
+	<xs:element name="UDS">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element minOccurs="0" maxOccurs="unbounded" ref="Ud" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="Ud">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="numero" />
+				<xs:element ref="tema" />
+				<xs:element ref="actividades" />
+				<xs:element ref="fechaExamen" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="numero" type="xs:integer" />
+	<xs:element name="tema" type="xs:string" />
+	<xs:element name="actividades" type="xs:string" />
+	<xs:element name="fechaExamen" type="xs:date" />
+</xs:schema>
